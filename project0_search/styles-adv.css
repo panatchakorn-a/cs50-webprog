@@ -1,0 +1,67 @@
+/* same with styles.css */
+body {
+    font-family: arial,sans-serif;
+}
+
+a {
+    color: #3c4043;
+    font-size: 14px;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Advanced search */
+.appbar {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+
+.col-row {
+    clear: both;
+    height: 42px;
+}
+.col-label {
+    width: 10%;
+    min-width: 167px;
+    font-size: 13px;
+    margin: 10px 0;
+    float:left;
+}
+.col-input {
+    width: 50%;
+    float: left;
+}
+
+input[type=text] {
+    font-size: 16px;
+    width: 100%;
+    height: 20px;
+    padding: 5px 8px 5px 8px;
+    border: 1px solid #d0cece;
+    border-top-color: rgb(167, 166, 166);
+}
+input[type=text]:focus {
+    outline: 2px solid #4285F4;
+}
+
+input[type=submit] {
+    color:white;
+    background-color:#4285F4;
+    border: 1px solid #255eba;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 11px 0px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color:#2977f3;
+    border: 1px solid #1351b6;
+}

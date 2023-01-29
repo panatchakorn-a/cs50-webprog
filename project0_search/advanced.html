@@ -2,25 +2,60 @@
 <html>
     <head>
         <title>Advanced Search</title>
+        <link rel="stylesheet" href="styles-adv.css">
     </head>
     <body>
         <div style="text-align:right;">
             <a href="index.html">Google Search</a>
         </div>
-        Advanced Search
+        <div class="appbar">
+            Advanced Search
+        </div>
+        <p style="border-bottom:1px solid #ebebeb;"></p>
         <br>
-        Find all pages with ...
-        <form action="https://www.google.com/search">
-            <label for="all">all these words:</label>
-            <input type="text" id="all" name="as_q"><br>
-            <label for="exact">the exact word or phrase:</label>
-            <input type="text" id="exact" name="as_epq"><br>
-            <label for="any">any of these words:</label>
-            <input type="text" id="any" name="as_oq"><br>
-            <label for="none">none of these words:</label>
-            <input type="text" id="none" name="as_eq"><br>
-
-            <input type="submit" value="Advanced Search" style="color:white;background-color:blue;">
-        </form>
+            <form action="https://www.google.com/search" style="margin: 10px 35px">
+                <p>Find pages with ...</p>
+                <div class="col-row">
+                    <div class="col-label">
+                        <label for="all">all these words:</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="text" id="all" name="as_q" class="adv-input">
+                    </div>
+                </div>
+                <div class="col-row">
+                    <div class="col-label">
+                        <label for="exact">the exact word or phrase:</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="text" id="exact" name="as_epq">
+                    </div>
+                </div>
+                <div class="col-row">
+                    <div class="col-label">
+                        <label for="any">any of these words:</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="text" id="any" name="as_oq">
+                    </div>
+                </div>
+                <div class="col-row">
+                    <div class="col-label">
+                        <label for="none">none of these words:</label>
+                    </div>
+                    <div class="col-input">
+                        <input type="text" id="none" name="as_eq">
+                    </div>
+                </div>
+                <div class="col-row">
+                    <div class="col-label"></div>
+                    <div class="col-input" style="text-align:right;">
+                        <input type="submit" value="Advanced Search">
+                    </div>
+                </div>
+                <div class="col-row">
+                    <p style="border-bottom:1px solid #ebebeb;"></p>
+                </div>
+            </form>
     </body>
 </html>
