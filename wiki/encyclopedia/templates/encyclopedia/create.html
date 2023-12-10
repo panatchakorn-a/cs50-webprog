@@ -1,0 +1,24 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create page
+{% endblock %}
+
+{% block body %}
+    <h1>Create a New Page</h1>
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+            <div class="alert alert-danger" role="alert">
+                <strong>{{ message }}</strong>
+            </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    <form action="{% url 'encyclopedia:create' %}" method="post">
+        {% csrf_token %}
+        {{ create_form.as_p }}
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+{% endblock %}
